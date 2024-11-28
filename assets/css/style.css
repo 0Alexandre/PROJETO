@@ -1,0 +1,12 @@
+.hover:hover {
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity));
+  color: white !important;
+}
+
+.navbar {
+  height: 68px;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+}
