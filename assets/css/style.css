@@ -29,3 +29,16 @@
   height: 100%;
   background-size: cover;
 }
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.fundo_escuro {
+  filter: brightness(20%);
+}
+
+.largura_bt {
+  width: 150px;
+}
