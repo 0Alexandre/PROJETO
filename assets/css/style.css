@@ -3,10 +3,29 @@
   color: white !important;
 }
 
+.card_hover:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  border-color: blue !important;
+}
+
 .navbar {
   height: 68px;
   padding: 0;
 }
 
 @media (max-width: 768px) {
+}
+
+#carouselExampleDark {
+  height: 430px;
+}
+
+.carousel-item,
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item .container-fluid {
+  height: 100%;
+  background-size: cover;
 }
