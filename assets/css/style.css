@@ -18,9 +18,6 @@
   padding: 0;
 }
 
-@media (max-width: 768px) {
-}
-
 /*Preencher todo o carrosel com a cor do fundo*/
 #carouselExampleDark {
   height: 430px;
@@ -49,4 +46,30 @@
 /*Largura do botão explorar do container do "Explora o mundo connosco"*/
 .largura_bt {
   width: 150px;
+}
+
+@media (max-width: 768px) {
+  .remove_mobile {
+    display: none;
+  }
+}
+
+#carouselExampleDark {
+  height: auto;
+}
+
+.carousel-item,
+.carousel-inner {
+  height: auto;
+  text-align: center;
+}
+
+.carousel-item .container-fluid {
+  height: auto;
+  background-size: contain;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
 }
