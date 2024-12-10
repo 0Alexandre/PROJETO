@@ -22,6 +22,15 @@
 }
 
 /*Preencher todo o carrosel com a cor do fundo*/
+#carouselExampleDark {
+  height: 430px;
+}
+
+.carousel-item,
+.carousel-inner {
+  height: 100%;
+}
+
 .carousel-item .container-fluid {
   height: 100%;
   background-size: cover;
