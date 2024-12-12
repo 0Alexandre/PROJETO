@@ -20,17 +20,16 @@
 
 /*Preencher todo o carrosel com a cor do fundo*/
 #carouselExampleDark {
-  height: 430px;
+  height: 450px !important;
 }
 
-.carousel-item,
-.carousel-inner {
-  height: 100%;
+.carousel-inner,
+.carousel-item {
+  height: 100% !important;
 }
 
 .carousel-item .container-fluid {
-  height: 100%;
-  background-size: cover;
+  height: 100% !important;
 }
 
 .container-fluid {
@@ -52,24 +51,27 @@
   .remove_mobile {
     display: none;
   }
+
+  #carouselExampleDark {
+    height: 1000px !important;
+  }
+
+  .centrar_texto_mobile {
+    text-align: center !important;
+  }
+
+  .centrar_bt_mobile {
+    justify-content: center !important;
+  }
+  .float-start {
+    float: none !important;
+  }
 }
 
-#carouselExampleDark {
-  height: auto;
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
-.carousel-item,
-.carousel-inner {
-  height: auto;
-  text-align: center;
-}
-
-.carousel-item .container-fluid {
-  height: auto;
-  background-size: contain;
-}
-
-.container-fluid {
-  padding: 0;
-  margin: 0;
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
