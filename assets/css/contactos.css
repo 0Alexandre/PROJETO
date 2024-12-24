@@ -1,0 +1,20 @@
+/*Hover dos cards*/
+.hover:hover {
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity));
+  color: white !important;
+}
+
+.card_hover:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  border-color: blue !important;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+  display: none;
+}
+
+#sucesso-message {
+  opacity: 0;
+}
