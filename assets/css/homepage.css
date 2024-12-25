@@ -46,6 +46,10 @@
   .float-start {
     float: none !important;
   }
+
+  .remover_bt_explorar {
+    display: none;
+  }
 }
 
 .carousel-control-next-icon {
