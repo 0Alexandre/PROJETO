@@ -1,15 +1,3 @@
-/*Hover dos botões*/
-.hover:hover {
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity));
-  color: white !important;
-}
-
-/*Hover dos cards*/
-.card_hover:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
-  border-color: blue !important;
-}
-
 /*Preencher todo o carrosel com a cor do fundo*/
 #carouselExampleDark {
   height: 450px !important;

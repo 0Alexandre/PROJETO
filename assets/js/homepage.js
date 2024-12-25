@@ -35,7 +35,7 @@ $(document).ready(function () {
       displayCountries(data);
     },
     error: function () {
-      alert('Erro ao buscar todos os países!');
+      alert('Erro ao buscar os países!');
     },
   });
 });

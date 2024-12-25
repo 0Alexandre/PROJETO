@@ -46,16 +46,15 @@ function displayCountries(countriesArray) {
   countriesArray.forEach((country) => {
     var countryCard = ` 
     <div class="col-md-4 mt-4">
-      <a href="detalhes_pais.html?name=${encodeURIComponent(country.name.common)}" class="text-decoration-none">
-        <div class="card h-100 card_hover">
+        <div class="card h-100 card_hover text-center rounded-0">
           <img src="${country.flags.svg}" class="card-img-top" alt="${country.name.common}" width="" height="300" />
           <div class="card-body">
-            <h5 class="card-title">${country.name.common}</h5>
-            <p class="card-text">Capital: ${country.capital}</p>
-            <p class="card-text">Region: ${country.region}</p>
+            <h5 class="card-title fw-bold text-center fs-4">${country.name.common}</h5>
+            <p class="card-text fw-semibold">Capital: ${country.capital}</p>
+            <p class="card-text fw-semibold">Region: ${country.region}</p>
+            <a href="detalhes_pais.html?name=${encodeURIComponent(country.name.common)}"><button class="btn border-primary text-primary btn-lg rounded-0 hover fs-6">Mais detalhes</button></a>
           </div>
         </div>
-      </a>  
     </div>`;
 
     countriesList.append(countryCard);
