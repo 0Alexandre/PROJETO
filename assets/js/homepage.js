@@ -4,11 +4,7 @@ $(document).ready(function () {
     // Limpa os resultados anteriores do html
     countriesList.empty();
 
-    var randomCountries = [];
-    while (randomCountries.length < 3 && countriesArray.length > 0) {
-      var randomIndex = Math.floor(Math.random() * countriesArray.length);
-      randomCountries.push(countriesArray.splice(randomIndex, 1)[0]);
-    }
+    const randomCountries = countriesArray.sort(() => Math.random() - 0.5).splice(0, 3);
 
     randomCountries.forEach((country) => {
       var countryCard = `
