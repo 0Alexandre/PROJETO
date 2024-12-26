@@ -24,11 +24,14 @@
     text-align: center;
     box-shadow: 0 11px 11px -11px rgba(33, 33, 33, 0.2);
   }
+  .me-4 {
+    margin-right: 0 !important;
+  }
 
   .remover_bordas {
     border: none !important;
     padding: 10px 15px;
-    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+    color: var(--bs-nav-link-color) !important;
     text-decoration: none;
   }
 }
