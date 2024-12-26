@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 768px) {
-  .centrar_texto {
+  .centrar_texto_mobile {
     text-align: center !important;
   }
 }
