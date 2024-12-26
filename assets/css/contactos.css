@@ -7,3 +7,9 @@
 #sucesso-message {
   opacity: 0;
 }
+
+@media (max-width: 768px) {
+  .centrar_texto {
+    text-align: center !important;
+  }
+}

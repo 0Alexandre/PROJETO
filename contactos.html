@@ -24,19 +24,27 @@
             <a class="nav-link me-4" href="homepage.html">Home</a>
             <a class="nav-link me-4" href="paises.html">Países</a>
             <a class="nav-link me-4" href="favoritos.html">Favoritos</a>
-            <a class="nav-link border border-primary border-2 text-primary hover active" href="contactos.html">Contactos</a>
+            <a class="nav-link me-4 border border-primary border-2 text-primary hover active remover_bordas" href="contactos.html">Contactos</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <div class="container mt-3 d-flex">
-      <img src="assets/img/imagens_contactos/imagem_ilustrativa.png" class="rounded me-3" alt="imagem_ilustrativa_sobre_nos" width="300" height="300" />
-      <div class="d-flex flex-column justify-content-center">
-        <p class="text-start fs-3 fw-bold">Unidos pelo objetivo de compartilhar um pouco da cultura de diversos países.</p>
-        <p class="text-start fs-6">Não hesite em entrar em contato conosco! Estamos sempre disponíveis para as suas dúvidas, sugestões ou qualquer mensagem que você queira compartilhar!</p>
+    <!-- Mostra um pequeno texto sobre o projeto -->
+
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <img src="assets/img/imagens_contactos/imagem_ilustrativa.png" class="rounded me-3" alt="imagem_ilustrativa_sobre_nos" width="300" height="300" />
+        </div>
+        <div class="col-12 d-flex flex-column justify-content-center">
+          <p class="text-start fs-3 fw-bold centrar_texto">Unidos pelo objetivo de compartilhar um pouco da cultura de diversos países.</p>
+          <p class="text-start fs-6 centrar_texto">Não hesite em entrar em contato conosco! Estamos sempre disponíveis para as suas dúvidas, sugestões ou qualquer mensagem que você queira compartilhar!</p>
+        </div>
       </div>
     </div>
+
+    <!-- Mostra um formulário -->
 
     <div class="container my-4">
       <h2><b>Contactar Suporte</b></h2>
@@ -61,10 +69,12 @@
           <label class="form-check-label" for="termos">Aceito os Termos e Condições</label>
           <div id="termos-error" class="error"></div>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" id="btn_enviar" class="btn btn-primary">Enviar</button>
       </form>
       <div id="sucesso-message">Mensagem enviada com sucesso!</div>
     </div>
+
+    <!-- Mostra duas redes sociais -->
 
     <div class="container text-center my-4">
       <h3><b>Ou fale conosco nas nossas redes sociais.</b></h3>
@@ -112,6 +122,6 @@
 
     <script src="assets/js/contactos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

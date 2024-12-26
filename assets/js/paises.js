@@ -60,3 +60,12 @@ function displayCountries(countriesArray) {
     countriesList.append(countryCard);
   });
 }
+
+var input = document.getElementById('searchInput');
+
+input.addEventListener('keypress', function (event) {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    document.getElementById('searchButton').click();
+  }
+});

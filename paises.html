@@ -24,15 +24,17 @@
             <a class="nav-link me-4" href="homepage.html">Home</a>
             <a class="nav-link me-4 active" href="paises.html">Países</a>
             <a class="nav-link me-4" href="favoritos.html">Favoritos</a>
-            <a class="nav-link border border-primary border-2 text-primary hover" href="contactos.html">Contactos</a>
+            <a class="nav-link me-4 border border-primary border-2 text-primary hover remover_bordas" href="contactos.html">Contactos</a>
           </div>
         </div>
       </div>
     </nav>
 
+    <!-- Mostra todos os países e um botão de pesquisa -->
+
     <div class="container mt-4 p-3">
       <div class="input-group mb-3 flex-nowrap">
-        <input type="text" class="form-control" id="searchInput" placeholder="Pesquisar país" />
+        <input type="text" class="form-control" id="searchInput" placeholder="Pesquisar país" list="countriesList" />
         <button type="submit" id="searchButton" class="btn btn-primary">Pesquisar</button>
       </div>
       <div id="countrieslist" class="row"></div>
@@ -77,8 +79,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/js/paises.js"></script>
   </body>
 </html>
