@@ -12,7 +12,7 @@ function loadFavoriteCountries() {
   var countriesList = $('#favoriteslist');
   countriesList.empty();
 
-favorites.forEach((countryName) => {
+  favorites.forEach((countryName) => {
   var api_url = 'https://restcountries.com/v3.1/name/' + encodeURIComponent(countryName);
 
   $.ajax({
@@ -20,9 +20,7 @@ favorites.forEach((countryName) => {
     method: 'GET',
     success: function (data) {
       var country = data[0];
-
       var heartIcon = favorites.includes(countryName) ? 'assets/img/icons/coração_preenchido.svg' : 'assets/img/icons/coração_vazio.svg';
-
       var countryCard = `
       <div class="col-md-4 mt-4">
           <div class="card h-100 card_hover text-center rounded-0">
@@ -46,7 +44,7 @@ favorites.forEach((countryName) => {
   });
 });
 
-$('.add-favorite').on('click', function () {
+$(document).on('click', '.add-favorite', function () {
   var countryName = $(this).data('country');  
   var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
@@ -56,12 +54,9 @@ $('.add-favorite').on('click', function () {
         return favorite !== countryName;
       });
     } else {
-
       favorites.push(countryName);
     }
-
     localStorage.setItem('favorites', JSON.stringify(favorites));
-
     loadFavoriteCountries();
     });
   }
