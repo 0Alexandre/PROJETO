@@ -53,11 +53,6 @@ function saveFormData() {
     mensagem: document.getElementById('mensagem').value,
     termos: document.getElementById('termos').checked,
   };
-
-  localStorage.setItem('formulario', JSON.stringify(formData));
-  console.log('Guardado');
-  var emailJson = localStorage.getItem('formulario');
-  console.log(emailJson);
 }
 
 // Mostrar e esconder mensagens de erro
